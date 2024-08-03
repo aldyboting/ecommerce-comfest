@@ -4,8 +4,8 @@
     "description": "A simple eCommerce project",
     "main": "server.js",
     "scripts": {
-        "test": "jest",
-        "test:e2e": "npx playwright test",
+        "test": "jest unit",
+        "test:e2e": "npx playwright test tests/integration/tests --project=chromium",
         "start": "node startServer.js"
     },
     "author": "",

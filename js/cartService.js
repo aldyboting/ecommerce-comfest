@@ -17,7 +17,7 @@ const updateItem = (productId, quantity) => {
 };
 
 const removeItem = (productId) => {
-  cart = cart.filter(item => item.id !== productId);
+  cart = cart.filter(item => item.id !== productId.toString());
 };
 
 const getTotal = () => {

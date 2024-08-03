@@ -37,7 +37,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const res = await fetch('/products', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ id: Date.now(), name, price }),
+      body: JSON.stringify({ id: Date.now().toString(), name, price }),
     });
     alert(await res.text());
     loadProducts();
@@ -81,6 +81,7 @@ document.addEventListener('DOMContentLoaded', () => {
       const removeButton = document.createElement('button');
       removeButton.textContent = 'Remove';
       removeButton.addEventListener('click', async () => {
+        console.log("Removing item with ID:", item.id);
         await removeFromCart(item.id);
         updateCart();
       });
