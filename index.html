@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>eCommerce App</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>Welcome to eCommerce App</h1>
+
+  <!-- User Authentication -->
+  <h2>User Authentication</h2>
+  <div id="auth">
+    <h3>Register</h3>
+    <form id="registerForm">
+      <input type="text" id="registerUsername" placeholder="Username" required>
+      <input type="password" id="registerPassword" placeholder="Password" required>
+      <button type="submit">Register</button>
+    </form>
+    
+    <h3>Login</h3>
+    <form id="loginForm">
+      <input type="text" id="loginUsername" placeholder="Username" required>
+      <input type="password" id="loginPassword" placeholder="Password" required>
+      <button type="submit">Login</button>
+    </form>
+  </div>
+
+  <!-- Product Management -->
+  <h2>Product Management</h2>
+  <form id="productForm">
+    <input type="text" id="productName" placeholder="Product Name" required>
+    <input type="number" id="productPrice" placeholder="Product Price" required>
+    <button type="submit">Add Product</button>
+  </form>
+  <ul id="productList"></ul>
+
+  <!-- Shopping Cart -->
+  <h2>Shopping Cart</h2>
+  <ul id="cart"></ul>
+  <p>Total: $<span id="total">0</span></p>
+
+  <script src="public/app.js"></script>
+</body>
+</html>
