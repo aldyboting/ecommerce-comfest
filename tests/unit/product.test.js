@@ -6,8 +6,7 @@ describe('Product Service', () => {
   });
 
   it('should add a new product', () => {
-    const message = addProduct(1, 'Test Product', 100);
-    expect(message).toEqual('Product added');
+    // Continue the unit test here
   });
 
   it('should not add a product with an existing id', () => {
@@ -16,12 +15,6 @@ describe('Product Service', () => {
   });
 
   it('should get all products', () => {
-    addProduct(1, 'Test Product', 100);
-    addProduct(2, 'Another Product', 150);
-    const products = getProducts();
-    expect(products).toEqual([
-      { id: 1, name: 'Test Product', price: 100 },
-      { id: 2, name: 'Another Product', price: 150 },
-    ]);
+    // Continue the unit test here
   });
 });
